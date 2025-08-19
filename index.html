@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Morine A.O — Portfolio & Services</title>
+  <meta name="description" content="Software developer portfolio for Morine A — web development, mobile apps, UI/UX design, and IT support services." />
+  <meta name="author" content="Morine A" />
+  <meta property="og:title" content="Morine A — Portfolio & Services" />
+  <meta property="og:description" content="Web & mobile developer. Clean, modern websites and apps. Available for freelance work." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    :root{
+      --brand:#0ea5e9; /* sky-500 */
+      --ink:#0f172a;   /* slate-900 */
+      --muted:#64748b; /* slate-500 */
+      --bg:#f8fafc;    /* slate-50 */
+    }
+    *{scroll-behavior:smooth}
+    body{font-family:"Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--ink); background:var(--bg)}
+    /* Navbar */
+    .navbar{transition:all .25s ease}
+    .navbar.scrolled{background:#ffffffcc; backdrop-filter:saturate(140%) blur(6px); box-shadow:0 8px 30px rgba(2,8,23,.08)}
+    .nav-link{font-weight:500}
+    .nav-link.active{color:var(--brand)!important}
+
+    /* Hero */
+    .hero{position:relative; padding:120px 0; background:linear-gradient(180deg, #ecfeff 0%, #ffffff 100%)}
+    .hero-badge{display:inline-flex; align-items:center; gap:.5rem; background:#e0f2fe; color:#0369a1; border-radius:999px; padding:.4rem .8rem; font-size:.9rem}
+    .hero h1{font-weight:700}
+    .hero-cta .btn{border-radius:999px; padding:.7rem 1.2rem}
+
+    /* Sections */
+    section{padding:80px 0}
+    .section-title{font-weight:700}
+
+    /* Cards */
+    .service-card{border:1px solid #e2e8f0; border-radius:1.25rem; padding:24px; background:#fff; height:100%; transition:transform .15s ease, box-shadow .15s ease}
+    .service-card:hover{transform:translateY(-4px); box-shadow:0 12px 30px rgba(2,8,23,.08)}
+
+    .project-card{border:1px solid #e2e8f0; border-radius:1.25rem; overflow:hidden; background:#fff; height:100%; box-shadow:0 4px 14px rgba(2,8,23,.04)}
+    .project-card img{object-fit:cover; height:200px; width:100%}
+
+    /* Testimonials */
+    .quote{border-left:4px solid var(--brand); padding-left:1rem; color:#0f172ab3}
+
+    /* Footer */
+    footer{padding:40px 0; color:#334155}
+
+    /* Back to top */
+    #backToTop{position:fixed; right:16px; bottom:16px; display:none}
+
+    /* Small helpers */
+    .brand{color:var(--brand)}
+    .tag{background:#e2e8f0; border-radius:999px; padding:.25rem .6rem; font-size:.8rem; margin-right:.25rem}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Morine<span class="brand">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-primary" href="#contact"><i class="bi bi-whatsapp"></i> Hire Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="hero-badge">
+            <i class="bi bi-lightning-charge-fill"></i>
+            Available for freelance work
+          </span>
+          <h1 class="display-5 mt-3">Hi, I’m <span class="brand">Morine A</span> — I build clean, modern <span class="brand">websites</span> & <span class="brand">mobile apps</span>.</h1>
+          <p class="lead text-secondary mt-3">Undergraduate (Applied Computer Technology) — strong in web development, UI/UX and IT support. I help businesses get online fast.</p>
+          <div class="hero-cta mt-4 d-flex gap-2">
+            <a class="btn btn-primary" href="https://usiu-asset-recovery.web.app/"><i class="bi bi-arrow-right-circle"></i> See My Work</a>
+            <a class="btn btn-outline-primary" href="assets/Morine_Ochieng_CV.pdf" download><i class="bi bi-file-earmark-arrow-down"></i> Download CV</a>
+          </div>
+          <div class="mt-3">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid rounded-4 shadow" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop" alt="Developer at a laptop" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-5">
+          <img class="img-fluid rounded-4" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop" alt="Portrait placeholder" />
+        </div>
+        <div class="col-lg-7">
+          <h2 class="section-title">About Me</h2>
+          <p class="text-secondary">I’m a software developer based in Nairobi. I love turning ideas into products people actually use. My recent work includes an Asset Recovery (Lost & Found) system with AI-powered matching and a client dashboard with real‑time visuals.</p>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="p-3 bg-white rounded-4 border h-100">
+                <h6 class="mb-2"><i class="bi bi-tools brand"></i> Skills</h6>
+                <p class="mb-0 small text-secondary">HTML, CSS, JavaScript, React, Firebase, UI/UX, IT Support</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 bg-white rounded-4 border h-100">
+                <h6 class="mb-2"><i class="bi bi-mortarboard brand"></i> Education</h6>
+                <p class="mb-0 small text-secondary">BSc. Applied Computer Technology (awaiting graduation)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
+        <div>
+          <h2 class="section-title mb-0">Featured Projects</h2>
+          <p class="text-secondary mb-0">A few things I’ve designed and built recently.</p>
+        </div>
+        <a class="btn btn-outline-secondary btn-sm" href="https://github.com/" target="_blank" rel="noopener">More on GitHub</a>
+      </div>
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card h-100">
+            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1600&auto=format&fit=crop" alt="Dashboard project" />
+            <div class="p-3">
+              <h5>Asset Recovery (Lost & Found)</h5>
+              <p class="text-secondary small">Web app with AI-driven matching, client dashboard, and Firebase backend.
+              </p>
+              <div class="d-flex gap-2 small">
+                <span class="tag">React</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">AI</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card h-100">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="Website project" />
+            <div class="p-3">
+              <h5>Business Website Template</h5>
+              <p class="text-secondary small">Fast, responsive template for SMEs — optimized for SEO and conversions.</p>
+              <div class="d-flex gap-2 small">
+                <span class="tag">HTML</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card h-100">
+            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop" alt="Mobile app UI" />
+            <div class="p-3">
+              <h5>Mobile App UI Kit</h5>
+              <p class="text-secondary small">Clean UI kit for Android/iOS with reusable components.</p>
+              <div class="d-flex gap-2 small">
+                <span class="tag">Figma</span>
+                <span class="tag">UX</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-white">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <p class="text-secondary mb-4">I provide end‑to‑end support — from idea to launch and maintenance.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card">
+            <i class="bi bi-window fs-2 brand"></i>
+            <h5 class="mt-3 mb-2">Website Design</h5>
+            <p class="text-secondary small">Clean, responsive websites that load fast and look great on any device.</p>
+            <div class="small"><span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">Bootstrap</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card">
+            <i class="bi bi-phone fs-2 brand"></i>
+            <h5 class="mt-3 mb-2">Mobile Apps</h5>
+            <p class="text-secondary small">Prototypes to production-ready apps with modern, usable interfaces.</p>
+            <div class="small"><span class="tag">React Native</span> <span class="tag">UX</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card">
+            <i class="bi bi-brush fs-2 brand"></i>
+            <h5 class="mt-3 mb-2">UI/UX Design</h5>
+            <p class="text-secondary small">Wireframes, prototypes, and user testing to craft intuitive experiences.</p>
+            <div class="small"><span class="tag">Figma</span> <span class="tag">Prototyping</span></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card">
+            <i class="bi bi-headset fs-2 brand"></i>
+            <h5 class="mt-3 mb-2">IT Support</h5>
+            <p class="text-secondary small">Troubleshooting, setup, and guidance for smooth day‑to‑day operations.</p>
+            <div class="small"><span class="tag">Helpdesk</span> <span class="tag">SLA</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <div class="container">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded-4 border h-100">
+            <p class="quote mb-3">“Morine delivered our website exactly as promised — fast and professional.”</p>
+            <div class="small text-secondary">— Jassan Thigah, Supervisor</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 bg-white rounded-4 border h-100">
+            <p class="quote mb-3">“Great eye for design and detail. Communication was excellent.”</p>
+            <div class="small text-secondary">— Happy Client</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h2 class="section-title">Let’s work together</h2>
+          <p class="text-secondary">Tell me about your project, and I’ll get back to you within 24 hours.</p>
+          <div class="d-flex align-items-center gap-3 mt-3">
+            <a class="btn btn-success" href="https://wa.me/2547XXXXXXXX" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+            <a class="btn btn-outline-secondary" href="mailto:morine@example.com"><i class="bi bi-envelope"></i> morineakoth48@gmail.com.com</a>
+          </div>
+          <div class="mt-3 small text-secondary">Nairobi, Kenya · Available remote & on‑site</div>
+        </div>
+        <div class="col-lg-6">
+          <!-- Netlify form handling (no backend needed) -->
+          <form name="contact" method="POST" data-netlify="true" class="p-4 bg-white rounded-4 border shadow-sm">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="d-none">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <div class="mb-3">
+              <label class="form-label">Your Name</label>
+              <input class="form-control" type="text" name="name" placeholder="Morine Odhiambo" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input class="form-control" type="email" name="email" placeholder="morineakoth48@gmail.com" required />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" name="message" rows="5" placeholder="What can I build for you?" required></textarea>
+            </div>
+            <button class="btn btn-primary w-100" type="submit"><i class="bi bi-send"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white border-top mt-5">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
+      <div class="small">© <span id="year"></span> Morine Akoth Odhiambo. All rights reserved.</div>
+      <div class="d-flex gap-3 fs-5">
+        <a class="text-secondary" href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a class="text-secondary" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a class="text-secondary" href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="btn btn-primary rounded-circle shadow"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Navbar scroll effect & active links
+    const navbar = document.querySelector('.navbar');
+    const backToTop = document.getElementById('backToTop');
+    const links = document.querySelectorAll('.nav-link');
+
+    function onScroll(){
+      const scrolled = window.scrollY > 10;
+      navbar.classList.toggle('scrolled', scrolled);
+      backToTop.style.display = scrolled ? 'inline-flex' : 'none';
+
+      // set active link
+      const sections = [...document.querySelectorAll('section, header')];
+      const top = window.scrollY + 120;
+      let current = '#home';
+      for (const el of sections){
+        if (el.offsetTop <= top) current = '#' + el.id;
+      }
+      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === current));
+    }
+    document.addEventListener('scroll', onScroll);
+    window.addEventListener('load', onScroll);
+
+    // Back to top
+    backToTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
